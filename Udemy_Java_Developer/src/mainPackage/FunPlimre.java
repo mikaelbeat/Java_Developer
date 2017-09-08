@@ -17,9 +17,6 @@ public class FunPlimre {
 		return r;
 	}
 	
-	
-	
-	
 	public static void main(String[] args) {
 		double r=new FunPlimre().div(10, 5);
 		System.out.println("Result is: " + r);
