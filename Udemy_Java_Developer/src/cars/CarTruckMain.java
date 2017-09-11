@@ -6,7 +6,7 @@ public class CarTruckMain {
 		CarTruck.Owner="Smith";
 		CarTruck cartruck=new CarTruck();
 		cartruck.Model=2016;
-		cartruck.HasTruck=true;
+		cartruck.SetHasTruck(true);
 		cartruck.MilesDrive=100;
 		cartruck.Price=23330;
 		cartruck.Type="GSM";

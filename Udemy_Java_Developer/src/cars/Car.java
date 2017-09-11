@@ -2,11 +2,12 @@ package cars;
 
 public class Car {
 	
-	String Type;
-	int Model;
-	double Price;
-	double MilesDrive;
-	static  String Owner;
+public	String Type;
+public	int Model;
+public	double Price;
+public	double MilesDrive;
+public	static  String Owner;
+Owners owners;
 	
 	public Car(String Type, int Model, double Price, double MilesDrive){
 		this.Type=Type;
@@ -14,6 +15,8 @@ public class Car {
 		this.Price=Price;
 		this.MilesDrive=MilesDrive;
 		System.out.println("Contructor is created.");
+		owners = new Owners();
+		owners.FirstName="Petri";
 	}
 	
 	public Car(){
