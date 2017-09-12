@@ -1,5 +1,7 @@
 package cars;
 
+// Abstract class can only be accessed be inheritance.
+
 public class Car {
 	
 public	String Type;
