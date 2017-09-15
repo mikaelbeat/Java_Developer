@@ -3,7 +3,7 @@ package threading;
 public class MyThread extends Thread{
 
 	boolean IsRunning=true;
-	String name;
+	 String name;
 	
 	public MyThread(String name){
 		this.name=name;
@@ -12,8 +12,14 @@ public class MyThread extends Thread{
 	
 	@Override
 	public void run(){
+		display();
+	}
+	
+	
+	
+void display(){ // Shared method
 		int count=0;
-		while(IsRunning){
+		while(count<10){
 			count++;
 			System.out.println(name+ ":" +count);
 			try {
@@ -22,9 +28,6 @@ public class MyThread extends Thread{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}
-		
+		}	
 	}
-	
-	
 }
